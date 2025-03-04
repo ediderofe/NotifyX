@@ -1,17 +1,31 @@
 # NotifyX
 
-A super lightweight notification tool that websites can easily add with a simple JavaScript snippet.
+A lightweight, customizable notification system for websites. Create beautiful, engaging notifications without any coding knowledge.
 
 ## Features
 
-- Lightweight JavaScript snippet for easy integration
-- Customizable notifications with text, colors, images, and CTA buttons
-- Multiple trigger options:
-  - Show after X seconds
-  - Show when the user scrolls X% of the page
-  - Show when the user is about to leave (exit-intent)
-- Simple UI for creating and customizing notifications
-- Basic analytics to track views & clicks
+- 🪶 Lightweight and fast
+- 🎨 Fully customizable design
+- 📱 Mobile responsive
+- 🎯 Smart triggers (time, scroll, exit intent)
+- 📊 Built-in analytics
+- 🔌 Easy integration
+
+## Quick Start
+
+1. Create your notification in the [NotifyX Dashboard](https://ediderofe.github.io/NotifyX)
+2. Copy the generated code snippet
+3. Paste it into your website's HTML
+
+## Example Code
+
+```html
+<script src="https://ediderofe.github.io/NotifyX/public/notifyx.js" data-id="your-notification-id"></script>
+```
+
+## Live Demo
+
+Visit [https://ediderofe.github.io/NotifyX](https://ediderofe.github.io/NotifyX) to see NotifyX in action!
 
 ## Getting Started
 
