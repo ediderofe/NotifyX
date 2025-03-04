@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard - NotifyX</title>
+  <title>NotifyX - Admin Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="admin.css">
@@ -63,238 +63,59 @@
 
     <main class="admin-main">
       <header class="admin-header">
-        <div class="header-search">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search notifications...">
+        <div class="logo">
+          <h1>NotifyX</h1>
+          <p>Admin Dashboard</p>
         </div>
         
-        <div class="header-actions">
-          <button class="btn btn-outline btn-sm">
+        <div class="actions">
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search notifications, websites, or settings...">
+          </div>
+          
+          <button class="new-notification-btn">
             <i class="fas fa-plus"></i>
             New Notification
           </button>
           
-          <div class="user-menu">
-            <img src="https://via.placeholder.com/32" alt="User" class="user-avatar">
+          <div class="user-profile">
+            <div class="avatar">
+              ED
+            </div>
             <div class="user-info">
-              <span class="user-name">John Doe</span>
-              <span class="user-email">john@example.com</span>
+              <p class="user-name">Edi Derofe</p>
+              <p class="user-email">edi@edi.com</p>
             </div>
           </div>
         </div>
       </header>
 
       <div class="admin-content">
-        <div class="dashboard-header">
-          <h2>Dashboard Overview</h2>
-          <div class="date-filter">
-            <button class="btn btn-outline btn-sm active">Today</button>
-            <button class="btn btn-outline btn-sm">Week</button>
-            <button class="btn btn-outline btn-sm">Month</button>
-            <button class="btn btn-outline btn-sm">Custom</button>
-          </div>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <div class="stat-info">
-              <h3>Total Views</h3>
-              <p class="stat-value" data-stat="views">12,543</p>
-              <p class="stat-change positive">
-                <i class="fas fa-arrow-up"></i>
-                8.2% vs last week
-              </p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-mouse-pointer"></i>
-            </div>
-            <div class="stat-info">
-              <h3>Click Rate</h3>
-              <p class="stat-value" data-stat="click-rate">4.8%</p>
-              <p class="stat-change positive">
-                <i class="fas fa-arrow-up"></i>
-                1.2% vs last week
-              </p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="stat-info">
-              <h3>Avg. Time</h3>
-              <p class="stat-value" data-stat="avg-time">2.3s</p>
-              <p class="stat-change negative">
-                <i class="fas fa-arrow-down"></i>
-                0.3s vs last week
-              </p>
-            </div>
-          </div>
-
-          <div class="stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="stat-info">
-              <h3>Conversions</h3>
-              <p class="stat-value" data-stat="conversions">324</p>
-              <p class="stat-change positive">
-                <i class="fas fa-arrow-up"></i>
-                12.5% vs last week
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="dashboard-grid">
-          <div class="dashboard-card notifications-list">
-            <div class="card-header">
-              <h3>Active Notifications</h3>
-              <button class="btn btn-outline btn-sm">View All</button>
-            </div>
-            
-            <div class="notification-items">
-              <div class="notification-item">
-                <div class="notification-preview">
-                  <div class="notification-icon">
-                    <i class="fas fa-tag"></i>
-                  </div>
-                  <div class="notification-content">
-                    <h4>Special Offer</h4>
-                    <p>Get 20% off your first purchase</p>
-                  </div>
-                </div>
-                <div class="notification-stats">
-                  <span class="stat">
-                    <i class="fas fa-eye"></i>
-                    2.4k
-                  </span>
-                  <span class="stat">
-                    <i class="fas fa-mouse-pointer"></i>
-                    5.2%
-                  </span>
-                </div>
-                <div class="notification-actions">
-                  <button class="btn btn-icon">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-icon">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </div>
+        <h2>All Notifications</h2>
+        
+        <button class="create-notification-btn">Create New Notification</button>
+        
+        <div class="notification-items">
+          <div class="notification-item">
+            <div class="notification-preview">
+              <div class="notification-icon">
+                <i class="fas fa-tag"></i>
               </div>
-
-              <div class="notification-item">
-                <div class="notification-preview">
-                  <div class="notification-icon">
-                    <i class="fas fa-users"></i>
-                  </div>
-                  <div class="notification-content">
-                    <h4>Social Proof</h4>
-                    <p>Join 1000+ happy customers</p>
-                  </div>
-                </div>
-                <div class="notification-stats">
-                  <span class="stat">
-                    <i class="fas fa-eye"></i>
-                    1.8k
-                  </span>
-                  <span class="stat">
-                    <i class="fas fa-mouse-pointer"></i>
-                    4.7%
-                  </span>
-                </div>
-                <div class="notification-actions">
-                  <button class="btn btn-icon">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-icon">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div class="notification-item">
-                <div class="notification-preview">
-                  <div class="notification-icon">
-                    <i class="fas fa-clock"></i>
-                  </div>
-                  <div class="notification-content">
-                    <h4>Limited Time</h4>
-                    <p>Offer ends in 24 hours</p>
-                  </div>
-                </div>
-                <div class="notification-stats">
-                  <span class="stat">
-                    <i class="fas fa-eye"></i>
-                    3.1k
-                  </span>
-                  <span class="stat">
-                    <i class="fas fa-mouse-pointer"></i>
-                    6.3%
-                  </span>
-                </div>
-                <div class="notification-actions">
-                  <button class="btn btn-icon">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="btn btn-icon">
-                    <i class="fas fa-trash"></i>
-                  </button>
-                </div>
+              <div class="notification-content">
+                <h4>Get 20% off your first purchase</h4>
+                <p>Special offer for new customers</p>
               </div>
             </div>
-          </div>
-
-          <div class="dashboard-card websites-list">
-            <div class="card-header">
-              <h3>Connected Websites</h3>
-              <button class="btn btn-outline btn-sm">Add Website</button>
-            </div>
-            
-            <div class="website-items">
-              <div class="website-item">
-                <div class="website-info">
-                  <img src="https://via.placeholder.com/32" alt="Website" class="website-icon">
-                  <div class="website-details">
-                    <h4>example.com</h4>
-                    <p>3 active notifications</p>
-                  </div>
-                </div>
-                <div class="website-stats">
-                  <span class="stat">
-                    <i class="fas fa-eye"></i>
-                    7.2k views
-                  </span>
-                  <span class="stat">
-                    <i class="fas fa-mouse-pointer"></i>
-                    5.4% CTR
-                  </span>
-                </div>
-                <button class="btn btn-icon">
-                  <i class="fas fa-ellipsis-v"></i>
-                </button>
-              </div>
-
-              <div class="website-item disabled">
-                <div class="website-info">
-                  <div class="website-icon add-website">
-                    <i class="fas fa-plus"></i>
-                  </div>
-                  <div class="website-details">
-                    <h4>Add another website</h4>
-                    <p>Upgrade to Premium to add more websites</p>
-                  </div>
-                </div>
-                <button class="btn btn-primary btn-sm">Upgrade</button>
-              </div>
+            <div class="notification-stats">
+              <span class="stat">
+                <i class="fas fa-eye"></i>
+                2.4k views
+              </span>
+              <span class="stat">
+                <i class="fas fa-mouse-pointer"></i>
+                5.2% CTR
+              </span>
             </div>
           </div>
         </div>
