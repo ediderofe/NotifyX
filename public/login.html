@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NotifyX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>NotifyX</h1>
+        <p>Lightweight Website Notification Tool</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#dashboard">Dashboard</a></li>
+          <li><a href="login.html" class="btn btn-outline">Login</a></li>
+          <li><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="auth-section">
+    <div class="container">
+      <div class="auth-container">
+        <div class="auth-form-container">
+          <h2>Welcome Back</h2>
+          <p class="auth-subtitle">Log in to your NotifyX account</p>
+          
+          <form id="login-form" class="auth-form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-with-icon">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Your password" required>
+              </div>
+            </div>
+            
+            <div class="form-group form-options">
+              <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+              </div>
+              <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+          </form>
+          
+          <div class="auth-divider">
+            <span>or</span>
+          </div>
+          
+          <div class="social-login">
+            <button class="btn btn-social btn-google">
+              <i class="fab fa-google"></i> Continue with Google
+            </button>
+            <button class="btn btn-social btn-github">
+              <i class="fab fa-github"></i> Continue with GitHub
+            </button>
+          </div>
+          
+          <p class="auth-footer">
+            Don't have an account? <a href="signup.html">Sign up</a>
+          </p>
+        </div>
+        
+        <div class="auth-image">
+          <img src="https://via.placeholder.com/600x800/4361ee/ffffff?text=NotifyX" alt="NotifyX">
+          <div class="auth-image-text">
+            <h3>Boost engagement with beautiful notifications</h3>
+            <p>Join thousands of websites using NotifyX to increase conversions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>NotifyX</h2>
+          <p>Lightweight Website Notification Tool</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#dashboard">Dashboard</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 NotifyX. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html> 

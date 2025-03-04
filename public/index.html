@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotifyX - Lightweight Website Notification Tool</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>NotifyX</h1>
+        <p>Lightweight Website Notification Tool</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="admin.html" class="btn btn-outline">Admin Panel</a></li>
+          <li><a href="login.html" class="btn btn-outline">Login</a></li>
+          <li><a href="signup.html" class="btn btn-primary">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Boost Engagement with Beautiful Notifications</h1>
+        <p>Add lightweight, customizable notifications to your website in minutes. No coding required.</p>
+        <a href="#dashboard" class="btn btn-primary btn-large">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/600x400" alt="NotifyX Demo">
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-feather"></i>
+          <h3>Lightweight</h3>
+          <p>Our script is tiny and won't slow down your website.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Customizable</h3>
+          <p>Change colors, text, images, and more to match your brand.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-bullseye"></i>
+          <h3>Smart Triggers</h3>
+          <p>Show notifications at the perfect moment.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Responsive</h3>
+          <p>Looks great on all devices, from desktop to mobile.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analytics</h3>
+          <p>Track views and clicks to measure performance.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-code"></i>
+          <h3>Easy Integration</h3>
+          <p>Just add one line of code to your website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2>Simple, Transparent Pricing</h2>
+      <p class="pricing-subtitle">Choose the plan that best fits your needs</p>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Free</h3>
+            <div class="pricing-price">$0 <span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Up to 3 notifications</li>
+            <li><i class="fas fa-check"></i> Basic triggers (time delay)</li>
+            <li><i class="fas fa-check"></i> Standard templates</li>
+            <li><i class="fas fa-check"></i> Basic analytics</li>
+            <li class="unavailable"><i class="fas fa-times"></i> Custom branding</li>
+            <li class="unavailable"><i class="fas fa-times"></i> Advanced triggers</li>
+            <li class="unavailable"><i class="fas fa-times"></i> Multiple websites</li>
+          </ul>
+          <a href="signup.html" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <h3 class="pricing-name">Premium</h3>
+            <div class="pricing-price">$4.90 <span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Unlimited notifications</li>
+            <li><i class="fas fa-check"></i> All triggers included</li>
+            <li><i class="fas fa-check"></i> Cart abandonment</li>
+            <li><i class="fas fa-check"></i> Exit intent</li>
+            <li><i class="fas fa-check"></i> Inactivity triggers</li>
+            <li><i class="fas fa-check"></i> Scroll-based triggers</li>
+            <li><i class="fas fa-check"></i> Custom branding</li>
+            <li><i class="fas fa-check"></i> Advanced analytics</li>
+            <li><i class="fas fa-check"></i> Up to 3 websites</li>
+          </ul>
+          <a href="signup.html" class="btn btn-primary btn-block">Get Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboard" class="dashboard">
+    <div class="container">
+      <h2>Create Your Notification</h2>
+      
+      <!-- Add example templates section -->
+      <div class="template-examples">
+        <h3>Choose a Template</h3>
+        <div class="template-grid">
+          <div class="template-card" data-template="visitors">
+            <div class="template-preview">
+              <div class="notifyx-notification">
+                <div class="notifyx-content">
+                  <div class="notifyx-image-container">
+                    <img src="https://via.placeholder.com/40/6c5ce7/ffffff?text=👥" class="notifyx-image" alt="Visitors">
+                  </div>
+                  <div class="notifyx-text-content">
+                    <h3 class="notifyx-title">3405 Visitors</h3>
+                    <p class="notifyx-message">in the last 24 hours</p>
+                  </div>
+                </div>
+                <button class="notifyx-close">&times;</button>
+              </div>
+            </div>
+            <h4>Visitor Count</h4>
+          </div>
+          
+          <div class="template-card" data-template="email">
+            <div class="template-preview">
+              <div class="notifyx-notification">
+                <div class="notifyx-content">
+                  <div class="notifyx-image-container">
+                    <img src="https://via.placeholder.com/40/e74c3c/ffffff?text=✉️" class="notifyx-image" alt="Email">
+                  </div>
+                  <div class="notifyx-text-content">
+                    <h3 class="notifyx-title">Check your mails!</h3>
+                    <p class="notifyx-message">we sent you a present</p>
+                  </div>
+                </div>
+                <button class="notifyx-close">&times;</button>
+              </div>
+            </div>
+            <h4>Email Notification</h4>
+          </div>
+          
+          <div class="template-card" data-template="social">
+            <div class="template-preview">
+              <div class="notifyx-notification">
+                <div class="notifyx-content">
+                  <div class="notifyx-image-container">
+                    <img src="https://via.placeholder.com/40/1da1f2/ffffff?text=𝕏" class="notifyx-image" alt="Twitter">
+                  </div>
+                  <div class="notifyx-text-content">
+                    <h3 class="notifyx-title">Follow me on X!</h3>
+                    <p class="notifyx-message">for questions and feedback :)</p>
+                  </div>
+                </div>
+                <button class="notifyx-close">&times;</button>
+              </div>
+            </div>
+            <h4>Social Follow</h4>
+          </div>
+          
+          <div class="template-card" data-template="custom">
+            <div class="template-preview">
+              <div class="notifyx-notification">
+                <div class="notifyx-content">
+                  <div class="notifyx-image-container">
+                    <img src="https://via.placeholder.com/40/27ae60/ffffff?text=★" class="notifyx-image" alt="Custom">
+                  </div>
+                  <div class="notifyx-text-content">
+                    <h3 class="notifyx-title">Custom Notification</h3>
+                    <p class="notifyx-message">Create your own notification</p>
+                  </div>
+                </div>
+                <a class="notifyx-button" href="#">Learn More</a>
+                <button class="notifyx-close">&times;</button>
+              </div>
+            </div>
+            <h4>Custom Template</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dashboard-container">
+        <div class="notification-form">
+          <form id="notification-form">
+            <input type="hidden" id="userId" value="demo-user">
+            <input type="hidden" id="notificationId" value="">
+            
+            <!-- Page 1: Basic Info -->
+            <div class="form-page" id="page-1">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Notification Title" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your notification message" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="image">Image (optional)</label>
+                <input type="file" id="image" name="image" accept="image/*">
+                <div id="image-preview" class="image-preview"></div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" id="next-btn" class="btn btn-primary">Next</button>
+              </div>
+            </div>
+
+            <!-- Page 2: Styling & Behavior -->
+            <div class="form-page" id="page-2" style="display: none;">
+              <div class="form-group">
+                <label for="buttonText">Button Text (optional)</label>
+                <input type="text" id="buttonText" name="buttonText" placeholder="Click Here">
+              </div>
+              
+              <div class="form-group">
+                <label for="buttonUrl">Button URL (optional)</label>
+                <input type="url" id="buttonUrl" name="buttonUrl" placeholder="https://example.com">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="backgroundColor">Background Color</label>
+                  <input type="color" id="backgroundColor" name="backgroundColor" value="#ffffff">
+                </div>
+                
+                <div class="form-group">
+                  <label for="textColor">Text Color</label>
+                  <input type="color" id="textColor" name="textColor" value="#000000">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Trigger Type</label>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="triggerType" id="trigger-time" value="time" checked>
+                    Time Delay
+                  </label>
+                  <label>
+                    <input type="radio" name="triggerType" id="trigger-scroll" value="scroll">
+                    Scroll Position
+                  </label>
+                  <label>
+                    <input type="radio" name="triggerType" id="trigger-exit" value="exit">
+                    Exit Intent
+                  </label>
+                </div>
+              </div>
+              
+              <div id="time-controls">
+                <div class="time-control">
+                  <label>Show After</label>
+                  <div class="time-control-inputs">
+                    <input type="number" id="triggerValue" value="5" min="0" max="300">
+                    <span>seconds</span>
+                  </div>
+                </div>
+                
+                <div class="time-control">
+                  <label>Stay Visible For</label>
+                  <div class="time-control-inputs">
+                    <input type="number" id="durationValue" value="10" min="0" max="300">
+                    <span>seconds</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="button" id="back-btn" class="btn btn-outline">Back</button>
+                <button type="submit" id="save-btn" class="btn btn-primary">Save Notification</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="notification-preview">
+          <h3>Preview</h3>
+          <div class="preview-container">
+            <div id="preview-notification" class="notifyx-notification notifyx-bottom-right">
+              <div class="notifyx-content">
+                <div id="preview-image-container" class="notifyx-image-container" style="display: none;">
+                  <img id="preview-image" class="notifyx-image" src="" alt="">
+                </div>
+                <div class="notifyx-text-content">
+                  <h3 id="preview-title" class="notifyx-title">Notification Title</h3>
+                  <p id="preview-message" class="notifyx-message">Your notification message will appear here.</p>
+                </div>
+              </div>
+              <a id="preview-button" class="notifyx-button" href="#" style="display: none;">Click Here</a>
+              <button class="notifyx-close">&times;</button>
+            </div>
+          </div>
+          
+          <div class="code-snippet">
+            <h4>Add this to your website:</h4>
+            <div class="code-container">
+              <pre><code id="embed-code">&lt;script src="https://notifyx.com/notifyx.js" data-id="your-notification-id"&gt;&lt;/script&gt;</code></pre>
+              <button id="copy-code" class="btn btn-small">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="analytics-container" style="display: none;">
+            <h4>Analytics</h4>
+            <div class="analytics-stats">
+              <div class="stat">
+                <span id="view-count">0</span>
+                <label>Views</label>
+              </div>
+              <div class="stat">
+                <span id="click-count">0</span>
+                <label>Clicks</label>
+              </div>
+              <div class="stat">
+                <span id="ctr">0%</span>
+                <label>CTR</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to boost engagement on your website?</h2>
+      <p>Start creating beautiful notifications in minutes.</p>
+      <a href="#dashboard" class="btn btn-primary btn-large">Get Started Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>NotifyX</h2>
+          <p>Lightweight Website Notification Tool</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#dashboard">Dashboard</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 NotifyX. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html> 

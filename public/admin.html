@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - NotifyX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <h1>NotifyX</h1>
+        <p>Admin Dashboard</p>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active">
+            <a href="#dashboard">
+              <i class="fas fa-home"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#notifications">
+              <i class="fas fa-bell"></i>
+              <span>Notifications</span>
+              <span class="badge">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="#websites">
+              <i class="fas fa-globe"></i>
+              <span>Websites</span>
+              <span class="badge">1</span>
+            </a>
+          </li>
+          <li>
+            <a href="#analytics">
+              <i class="fas fa-chart-line"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#settings">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="subscription-info">
+          <span class="plan-badge free">Free Plan</span>
+          <a href="#upgrade" class="btn btn-primary btn-sm">Upgrade to Premium</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+      <header class="admin-header">
+        <div class="header-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search notifications...">
+        </div>
+        
+        <div class="header-actions">
+          <button class="btn btn-outline btn-sm">
+            <i class="fas fa-plus"></i>
+            New Notification
+          </button>
+          
+          <div class="user-menu">
+            <img src="https://via.placeholder.com/32" alt="User" class="user-avatar">
+            <div class="user-info">
+              <span class="user-name">John Doe</span>
+              <span class="user-email">john@example.com</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="admin-content">
+        <div class="dashboard-header">
+          <h2>Dashboard Overview</h2>
+          <div class="date-filter">
+            <button class="btn btn-outline btn-sm active">Today</button>
+            <button class="btn btn-outline btn-sm">Week</button>
+            <button class="btn btn-outline btn-sm">Month</button>
+            <button class="btn btn-outline btn-sm">Custom</button>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="stat-info">
+              <h3>Total Views</h3>
+              <p class="stat-value" data-stat="views">12,543</p>
+              <p class="stat-change positive">
+                <i class="fas fa-arrow-up"></i>
+                8.2% vs last week
+              </p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-mouse-pointer"></i>
+            </div>
+            <div class="stat-info">
+              <h3>Click Rate</h3>
+              <p class="stat-value" data-stat="click-rate">4.8%</p>
+              <p class="stat-change positive">
+                <i class="fas fa-arrow-up"></i>
+                1.2% vs last week
+              </p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-info">
+              <h3>Avg. Time</h3>
+              <p class="stat-value" data-stat="avg-time">2.3s</p>
+              <p class="stat-change negative">
+                <i class="fas fa-arrow-down"></i>
+                0.3s vs last week
+              </p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <h3>Conversions</h3>
+              <p class="stat-value" data-stat="conversions">324</p>
+              <p class="stat-change positive">
+                <i class="fas fa-arrow-up"></i>
+                12.5% vs last week
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="dashboard-card notifications-list">
+            <div class="card-header">
+              <h3>Active Notifications</h3>
+              <button class="btn btn-outline btn-sm">View All</button>
+            </div>
+            
+            <div class="notification-items">
+              <div class="notification-item">
+                <div class="notification-preview">
+                  <div class="notification-icon">
+                    <i class="fas fa-tag"></i>
+                  </div>
+                  <div class="notification-content">
+                    <h4>Special Offer</h4>
+                    <p>Get 20% off your first purchase</p>
+                  </div>
+                </div>
+                <div class="notification-stats">
+                  <span class="stat">
+                    <i class="fas fa-eye"></i>
+                    2.4k
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-mouse-pointer"></i>
+                    5.2%
+                  </span>
+                </div>
+                <div class="notification-actions">
+                  <button class="btn btn-icon">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-icon">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-preview">
+                  <div class="notification-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="notification-content">
+                    <h4>Social Proof</h4>
+                    <p>Join 1000+ happy customers</p>
+                  </div>
+                </div>
+                <div class="notification-stats">
+                  <span class="stat">
+                    <i class="fas fa-eye"></i>
+                    1.8k
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-mouse-pointer"></i>
+                    4.7%
+                  </span>
+                </div>
+                <div class="notification-actions">
+                  <button class="btn btn-icon">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-icon">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="notification-item">
+                <div class="notification-preview">
+                  <div class="notification-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="notification-content">
+                    <h4>Limited Time</h4>
+                    <p>Offer ends in 24 hours</p>
+                  </div>
+                </div>
+                <div class="notification-stats">
+                  <span class="stat">
+                    <i class="fas fa-eye"></i>
+                    3.1k
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-mouse-pointer"></i>
+                    6.3%
+                  </span>
+                </div>
+                <div class="notification-actions">
+                  <button class="btn btn-icon">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-icon">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-card websites-list">
+            <div class="card-header">
+              <h3>Connected Websites</h3>
+              <button class="btn btn-outline btn-sm">Add Website</button>
+            </div>
+            
+            <div class="website-items">
+              <div class="website-item">
+                <div class="website-info">
+                  <img src="https://via.placeholder.com/32" alt="Website" class="website-icon">
+                  <div class="website-details">
+                    <h4>example.com</h4>
+                    <p>3 active notifications</p>
+                  </div>
+                </div>
+                <div class="website-stats">
+                  <span class="stat">
+                    <i class="fas fa-eye"></i>
+                    7.2k views
+                  </span>
+                  <span class="stat">
+                    <i class="fas fa-mouse-pointer"></i>
+                    5.4% CTR
+                  </span>
+                </div>
+                <button class="btn btn-icon">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button>
+              </div>
+
+              <div class="website-item disabled">
+                <div class="website-info">
+                  <div class="website-icon add-website">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <div class="website-details">
+                    <h4>Add another website</h4>
+                    <p>Upgrade to Premium to add more websites</p>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm">Upgrade</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html> 
