@@ -752,4 +752,26 @@
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
+}
+
+.create-notification-btn {
+  background: #9f7aea;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 1rem auto;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(159, 122, 234, 0.2);
+}
+
+.create-notification-btn:hover {
+  background: #805ad5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(159, 122, 234, 0.3);
 } 
