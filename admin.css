@@ -127,7 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.75rem 2.5rem;
+  padding: 1.25rem 2rem;
   background: var(--background-dark);
   border-bottom: 1px solid var(--border-color);
   position: sticky;
@@ -138,24 +138,21 @@
 .admin-header .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .admin-header .logo h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
-  background: linear-gradient(120deg, var(--primary-color), var(--primary-hover));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
   margin: 0;
 }
 
 .admin-header .logo p {
   color: var(--text-secondary);
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  margin-left: 0.5rem;
 }
 
 .admin-header .search-bar {
@@ -166,11 +163,11 @@
 .admin-header .search-bar input {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 0.75rem 1rem 0.75rem 3rem;
+  border-radius: 8px;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
   color: var(--text-primary);
-  font-size: 0.95rem;
-  width: 320px;
+  font-size: 0.9rem;
+  width: 280px;
   transition: all 0.3s ease;
 }
 
@@ -182,11 +179,17 @@
 
 .admin-header .search-bar i {
   position: absolute;
-  left: 1.25rem;
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+
+.admin-header .actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Notification Items */
@@ -351,74 +354,37 @@
   }
 }
 
-/* Website Cards */
-.website-card {
-  background: white;
-  border-radius: 16px;
-  padding: 1.25rem;
+/* Websites Page */
+.websites-section {
+  padding: 2rem;
+}
+
+.websites-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.website-info {
-  display: flex;
   align-items: center;
-  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.website-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-.website-details h3 {
-  color: #1a202c;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem 0;
-}
-
-.website-details p {
-  color: #2d3748;
-  font-size: 0.9rem;
+.websites-header h2 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
   margin: 0;
-}
-
-.website-stats {
-  display: flex;
-  gap: 1rem;
-}
-
-.website-stat {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #f7fafc;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  color: #2d3748;
-  font-size: 0.9rem;
-  font-weight: 500;
 }
 
 .add-website-btn {
   background: var(--primary-color);
   color: white;
   border: none;
-  padding: 0.6rem 1.5rem;
-  border-radius: 10px;
-  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: block;
-  margin: 1rem 0;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   box-shadow: 0 2px 4px rgba(159, 122, 234, 0.2);
 }
 
@@ -426,6 +392,88 @@
   background: var(--primary-hover);
   transform: translateY(-1px);
   box-shadow: 0 4px 6px rgba(159, 122, 234, 0.3);
+}
+
+.website-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.website-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.website-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #f7fafc;
+  padding: 0.75rem;
+}
+
+.website-details h3 {
+  color: #1a202c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem 0;
+}
+
+.website-details p {
+  color: #4a5568;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.website-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.website-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.website-stat i {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.website-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.website-action-btn {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.website-action-btn:hover {
+  background: rgba(113, 128, 150, 0.1);
+  color: #4a5568;
 }
 
 /* Connected Websites Section */
